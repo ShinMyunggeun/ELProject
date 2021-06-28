@@ -174,20 +174,15 @@ calendarWithPriceGrade.put(20210929, "B"); calendarWithPriceGrade.put(20210930, 
 			break;}	
 			String privilegeText="nothing";
 			switch(privilege) {
-			case 1:
-			privilegeText ="없음";
+			case 1:privilegeText ="없음";
 			break;
-			case 2:
-			privilegeText ="장애인 우대적용";
+			case 2:privilegeText ="장애인 우대적용";
 			break;
-			case 3:
-			privilegeText ="국가유공자 우대적용";
+			case 3:privilegeText ="국가유공자 우대적용";
 			break;
-			case 4:
-			privilegeText ="다자녀 우대 우대적용";
+			case 4:privilegeText ="다자녀 우대 우대적용";
 			break;
-			case 5:
-			privilegeText ="임산부 우대 적용";
+			case 5:privilegeText ="임산부 우대 적용";
 			break;	}
 		System.out.println("=============== 에버랜드 ================");
 		System.out.println(currentGradeOfDay+ "티켓 "+ byAgeText+" X"+ qty+ "  " +ticketPrice * qty +"원  * "+ privilegeText  );
