@@ -39,16 +39,16 @@ public class Everwork {
 		// TODO Auto-generated method stub
 	    Scanner input = new Scanner(System.in);
 		int date, qty, privilege;
-		System.out.print("ÀÌ¿ë³¯Â¥¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. (¼ıÀÚ·Î¸¸ e.g 20210628) \n");
+		System.out.print("ì´ìš©ë‚ ì§œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. (ìˆ«ìë¡œë§Œ e.g 20210628) \n");
 		date = input.nextInt();
 		String currentGradeOfDay = calendarWithPriceGrade.get(date);
-		System.out.print("¸¸ ³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä \n");
+		System.out.print("ë§Œ ë‚˜ì´ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” \n");
 		int age =input.nextInt();
 		int ticketPrice =-1;	
-		System.out.print("¸î°³¸¦ ÁÖ¹®ÇÏ½Ã°Ú½À´Ï±î? \n");
+		System.out.print("ëª‡ê°œë¥¼ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ? \n");
 		qty = input.nextInt();
-		System.out.print("¿ì´ë»çÇ×À» ¼±ÅÃÇÏ¼¼¿ä. \n");
-		System.out.print("1. ¾øÀ½(³ªÀÌ ¿ì´ë´Â ÀÚµ¿Ã³¸®) \n2. Àå¾ÖÀÎ \n3. ±¹°¡À¯°øÀÚ \n4. ´ÙÀÚ³à \n5. ÀÓ»êºÎ \n");
+		System.out.print("ìš°ëŒ€ì‚¬í•­ì„ ì„ íƒí•˜ì„¸ìš”. \n");
+		System.out.print("1. ì—†ìŒ(ë‚˜ì´ ìš°ëŒ€ëŠ” ìë™ì²˜ë¦¬) \n2. ì¥ì• ì¸ \n3. êµ­ê°€ìœ ê³µì \n4. ë‹¤ìë…€ \n5. ì„ì‚°ë¶€ \n");
 		privilege = input.nextInt();
 	
 		String byAge ="nothing";
@@ -200,52 +200,52 @@ public class Everwork {
 		String byAgeText ="";
 		switch(byAge) {
 		case "adult" :
-			byAgeText="´ëÀÎ";
+			byAgeText="ëŒ€ì¸";
 			break;
 		case "kid" :
-			byAgeText="¼ÒÀÎ";
+			byAgeText="ì†Œì¸";
 			break;
 		case "elderly" :
-			byAgeText="°æ·Î";
+			byAgeText="ê²½ë¡œ";
 			break;
 		case "teenager" : 
-			byAgeText ="Ã»¼Ò³â";
+			byAgeText ="ì²­ì†Œë…„";
 			break;
 		case "adultOrTeenager":
-			byAgeText ="´ëÀÎ/Ã»¼Ò³â";
+			byAgeText ="ëŒ€ì¸/ì²­ì†Œë…„";
 			break;
 		case "kidOrElderly":
-			byAgeText = "¼ÒÀÎ/°æ·Î";
+			byAgeText = "ì†Œì¸/ê²½ë¡œ";
 			break;
 		case "kidOrTeanagerOrElderly":
-			byAgeText ="¼Ò¾Æ/Ã»¼Ò³â/°æ·Î";
+			byAgeText ="ì†Œì•„/ì²­ì†Œë…„/ê²½ë¡œ";
 			break;
 		}	
 		String privilegeText="nothing";
 		switch(privilege) {
 		case 1:
-			privilegeText ="¾øÀ½";
+			privilegeText ="ì—†ìŒ";
 			break;
 			
 		case 2:
-			privilegeText ="Àå¾ÖÀÎ ¿ì´ëÀû¿ë";
+			privilegeText ="ì¥ì• ì¸ ìš°ëŒ€ì ìš©";
 			break;
 			
 		case 3:
-			privilegeText ="±¹°¡À¯°øÀÚ ¿ì´ëÀû¿ë";
+			privilegeText ="êµ­ê°€ìœ ê³µì ìš°ëŒ€ì ìš©";
 			break;
 			
 		case 4:
-			privilegeText ="´ÙÀÚ³à ¿ì´ë ¿ì´ëÀû¿ë";
+			privilegeText ="ë‹¤ìë…€ ìš°ëŒ€ ìš°ëŒ€ì ìš©";
 			break;
 			
 		case 5:
-			privilegeText ="ÀÓ»êºÎ ¿ì´ë Àû¿ë";
+			privilegeText ="ì„ì‚°ë¶€ ìš°ëŒ€ ì ìš©";
 			break;	
 		}
-		System.out.println("=============== ¿¡¹ö·£µå ================");
-		System.out.println(currentGradeOfDay+ "Æ¼ÄÏ "+ byAgeText+" X"+ qty+ "  " +ticketPrice * qty +"¿ø  * "+ privilegeText  );
-		System.out.println("=============== ¿¡¹ö·£µå ================");
-		System.out.println("°¡°İÀº " +ticketPrice * qty +"¿ø ÀÔ´Ï´Ù. \n°¨»çÇÕ´Ï´Ù."  );
+		System.out.println("=============== ì—ë²„ëœë“œ ================");
+		System.out.println(currentGradeOfDay+ "í‹°ì¼“ "+ byAgeText+" X"+ qty+ "  " +ticketPrice * qty +"ì›  * "+ privilegeText  );
+		System.out.println("=============== ì—ë²„ëœë“œ ================");
+		System.out.println("ê°€ê²©ì€ " +ticketPrice * qty +"ì› ì…ë‹ˆë‹¤. \nê°ì‚¬í•©ë‹ˆë‹¤."  );
 	}
 }
