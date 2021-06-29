@@ -1,25 +1,17 @@
 package standard;
 
 import java.text.SimpleDateFormat;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Everland {
-=======
-import java.util.Date;
-import java.util.Scanner;
-
 public class Everlanddd {
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 
    public static void main(String[] args) {
       // TODO Auto-generated method stub
 
 	Scanner myInput = new Scanner(System.in) ;
 	int todayYear, todayDate, birthYear, birthMonth, birthDay, birthDate, resDate, Prior, Count = 0, Age, Price = 0;
-<<<<<<< HEAD
     int totalPrice=0;
 	int qty = 0; 
 	String ticketType, registNumber, age = null ;
@@ -31,29 +23,14 @@ public class Everlanddd {
 	ArrayList<Integer> arrCount = new ArrayList<Integer>();
 	ArrayList<Integer> arrPrice = new ArrayList<Integer>();
 	ArrayList<String> arrB = new ArrayList<String>();
-=======
-	String ticketType, registNumber, age = null ;
-	String b = "";
-	int addOrder = 0, orderCount = 0 ;
-	String[] saveTicket = new String[100];
-	String[] saveAge = new String[100];
-	int[] saveCount = new int[100];
-	int[] savePrice = new int[100];
-	String[] saveb = new String[100];
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
       
 	String pattern1 = "YYYYMMDD";
 	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern1);
 	String today = simpleDateFormat.format(new Date());
-<<<<<<< HEAD
-=======
-	System.out.println(today);
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 	todayYear = Integer.parseInt(today.substring(0,4));
     todayDate = Integer.parseInt(today.substring(4,8));
 
     while(true) {
-<<<<<<< HEAD
     	arrTicket.clear();
     	arrAge.clear();
     	arrCount.clear();
@@ -62,19 +39,11 @@ public class Everlanddd {
     do {
     while(true) {
     	  System.out.println("--------------------------------------");
-    	  System.out.println("ÀÌ¿ë³¯Â¥¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.	 e.g) 20210601 ");
-=======
-   	  orderCount = 0;
-    do {
-    while(true) {
-    	  System.out.println("--------------------------------------");
     	  System.out.println("ì´ìš©ë‚ ì§œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.	 e.g) 20210601 ");
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
     	  System.out.print(": ");
     	  Scanner myInput1 = new Scanner(System.in);
     	  resDate = myInput1.nextInt();
 
-<<<<<<< HEAD
     	 if(resDate == 20210904 || resDate == 20210905 || resDate == 20210911 || resDate == 20210912 || resDate == 20210918 || 
     	    resDate == 20210919 || resDate == 20210920 || resDate == 20210921 || resDate == 20210922 || resDate == 20210925 || 
     	    resDate == 20210926 || resDate == 20211002 || resDate == 20211003 || resDate == 20211009 || resDate == 20211010 ||
@@ -82,15 +51,6 @@ public class Everlanddd {
     	    resDate == 20211031 || resDate == 20211106 || resDate == 20211107) {
     		ticketType = "Aticket";
     		break;
-=======
-   if(resDate == 20210904 || resDate == 20210905 || resDate == 20210911 || resDate == 20210912 || resDate == 20210918 || 
-	  resDate == 20210919 || resDate == 20210920 || resDate == 20210921 || resDate == 20210922 || resDate == 20210925 || 
-	  resDate == 20210926 || resDate == 20211002 || resDate == 20211003 || resDate == 20211009 || resDate == 20211010 ||
-	  resDate == 20211016 || resDate == 20211017 || resDate == 20211023 || resDate == 20211024 || resDate == 20211030 ||
-	  resDate == 20211031 || resDate == 20211106 || resDate == 20211107) {
-	  ticketType = "Aticket";
-	  break;
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
    }else if(resDate == 20210703 || resDate == 20210704 || resDate == 20210710 || resDate == 20210711 || resDate == 20210717 || 
 		    resDate == 20210718 || resDate == 20210724 || resDate == 20210725 || resDate == 20210729 || resDate == 20210730 || 
 		    resDate == 20210731 || resDate == 20210801 || resDate == 20210802 || resDate == 20210803 || resDate == 20210807 || 
@@ -124,8 +84,7 @@ public class Everlanddd {
 	   		ticketType = "Cticket";
 	   		break;
     }else {
-<<<<<<< HEAD
-   		   	System.out.println("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+   		   	System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
    		   	continue;}
     	  	}		   
 		   		   
@@ -136,40 +95,17 @@ public class Everlanddd {
 		}else {
 		  Price = 50000;}
 		System.out.println(ticketType);
-		System.out.println("¤Ñ");
-
-		while(true) {
-			System.out.print("ÁÖ¹Î¹øÈ£ ¾ÕÀÚ¸®¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(e.g 910222)(0 ´©¸£¸é Ã³À½À¸·Î)\n");
-=======
-   		   	System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
-   		   	continue;
-   	   			}
-    	  	}		   
-		   		   
-	if(ticketType == "A ticket") {
-		  Price = Price + 60000;
-		} else if(ticketType == "B ticket") {
-		  Price = Price + 56000;
-		} else {
-		  Price = Price + 50000;
-		}
-		System.out.println(ticketType);
 		System.out.println("ã…¡");
 
 		while(true) {
-			System.out.print("ì£¼ë¯¼ë²ˆí˜¸ ì•ìë¦¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”.(ìˆ«ìë¡œë§Œ 950916)(0 ëˆ„ë¥´ë©´ ì²˜ìŒìœ¼ë¡œ)\n");
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
+			System.out.print("ì£¼ë¯¼ë²ˆí˜¸ ì•ìë¦¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”.(e.g 910222)(0 ëˆ„ë¥´ë©´ ì²˜ìŒìœ¼ë¡œ)\n");
 			System.out.print(": ");
 			Scanner myInput2 = new Scanner(System.in);
 			registNumber = myInput2.nextLine();
 			if(registNumber.equals("0")) {
 				break;
 			} else if(registNumber.length() != 6) {
-<<<<<<< HEAD
-				System.out.println("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
-=======
 				System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 				continue;
 			} else if(registNumber.length() == 6) {
 				birthMonth = Integer.parseInt(registNumber.substring(2,4));
@@ -177,8 +113,7 @@ public class Everlanddd {
 				if((1 <= birthMonth && birthMonth <= 12) && (1 <= birthDay && birthDay <= 32)  ) {	
 					break;
 				} else {
-<<<<<<< HEAD
-					System.out.println("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+					System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 					continue;}					
 			} else {
 				break;}
@@ -186,21 +121,6 @@ public class Everlanddd {
 			continue;}
 			else {
 		}birthYear = Integer.parseInt(registNumber.substring(0,2));
-=======
-					System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
-					continue;
-				}					
-			} else {
-				break;
-			}
-		}
-				if (registNumber.equals("0")) {
-					continue;			
-				} else {
-		}
-	
-		birthYear = Integer.parseInt(registNumber.substring(0,2));
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 		birthDate = Integer.parseInt(registNumber.substring(2,6));
 
 		if(0 <= birthYear && birthYear <= 30) {
@@ -212,29 +132,16 @@ public class Everlanddd {
 		if(todayDate < birthDate) {
 			Age = Age - 1;
 		} else {
-<<<<<<< HEAD
 			Age = Age + 0;}
 
-		System.out.printf("¸¸ %d\n", Age);
-=======
-			Age = Age + 0;
-		}
-
 		System.out.printf("ë§Œ %d\n", Age);
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 
 		if((19 <= Age) && (Age <= 64 ))  {
 			age = "Adult";	
 		} else if(65 <= Age) {
-<<<<<<< HEAD
-			age = "°æ·Î";
-		} else if((3 <= Age) && (Age <= 12 )) {
-			age = "¾î¸°ÀÌ";
-=======
 			age = "ê²½ë¡œ";
 		} else if((3 <= Age) && (Age <= 12 )) {
 			age = "ì–´ë¦°ì´";
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 			if(ticketType == "A ticket") {
 				Price = 48000;
 			} else if(ticketType == "B ticket") {
@@ -244,15 +151,14 @@ public class Everlanddd {
 			}
 		} else if(Age < 3) {
 			age = "Infant";
-<<<<<<< HEAD
 			Price = 0;} 
 		else {
 			age = "Teenager";
 		}
-		System.out.println("¤Ñ");
+		System.out.println("ã…¡");
 
 		while(true) {
-			System.out.println("¸î°³¸¦ ÁÖ¹®ÇÏ½Ã°Ú½À´Ï±î?(0 ´©¸£¸é Ã³À½À¸·Î)");
+			System.out.println("ëª‡ê°œë¥¼ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(0 ëˆ„ë¥´ë©´ ì²˜ìŒìœ¼ë¡œ)");
 			System.out.print(": ");
 			Scanner input = null;
 			Scanner myInput3 = new Scanner(System.in);
@@ -264,36 +170,6 @@ public class Everlanddd {
 		}
 		if(Count == 0) {
 			return;}
-			System.out.println("¤Ñ");
-
-		while(true) {
-			System.out.println("¿ì´ë»çÇ×À» ¼±ÅÃÇÏ¼¼¿ä.(0 ´©¸£¸é Ã³À½À¸·Î)");
-			System.out.println("1. ¾øÀ½ (³ªÀÌ ¿ì´ë´Â ÀÚµ¿Ã³¸®)");
-			System.out.println("2. Àå¾ÖÀÎ");
-			System.out.println("3. ±¹°¡À¯°øÀÚ");
-			System.out.println("4. ´ÙÀÚ³à");
-			System.out.println("5. ÀÓ»êºÎ");
-=======
-			Price = 0;
-		} else {
-			age = "Teenager";
-		}
-		System.out.println("ã…¡");
-
-		while(true) {
-			System.out.println("ëª‡ê°œë¥¼ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(0 ëˆ„ë¥´ë©´ ì²˜ìŒìœ¼ë¡œ)");
-			System.out.print(": ");
-			Scanner myInput3 = new Scanner(System.in);
-			Count = myInput3.nextInt();
-			if(Count == 0) {
-				break;
-			} else {
-				break;
-			}
-		}
-		if(Count == 0) {
-			return;
-		}
 			System.out.println("ã…¡");
 
 		while(true) {
@@ -303,22 +179,20 @@ public class Everlanddd {
 			System.out.println("3. êµ­ê°€ìœ ê³µì");
 			System.out.println("4. ë‹¤ìë…€");
 			System.out.println("5. ì„ì‚°ë¶€");
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 			System.out.print(": ");
 			Scanner myInput4 = new Scanner(System.in);
 			Prior = myInput4.nextInt();
 			if(0 <= Prior && Prior <=5 ) {
 				break;
 			} else {
-<<<<<<< HEAD
-				System.out.println("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+				System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 			continue;}
 		}if(Prior == 0) {
 		continue;}
 		
 		switch(Prior) {
-		case 1: b = "¿ì´ëÀû¿ë ¾øÀ½"; break;
-		case 2: b = "Àå¾ÖÀÎ ¿ì´ëÀû¿ë"; 
+		case 1: b = "ìš°ëŒ€ì ìš© ì—†ìŒ"; break;
+		case 2: b = "ì¥ì• ì¸ ìš°ëŒ€ì ìš©"; 
 		if(ticketType == "A ticket") {
 			if(age == "Adult") {Price = 36000;
 			} else if(age == "Infant") {Price = 0;
@@ -332,7 +206,7 @@ public class Everlanddd {
 			} else if(age == "Infant") {Price = 0;
 			} else {Price = 24000;}
 		} break;
-		case 3: b = "±¹°¡À¯°øÀÚ ¿ì´ëÀû¿ë"; 
+		case 3: b = "êµ­ê°€ìœ ê³µì ìš°ëŒ€ì ìš©"; 
 		if(ticketType == "A ticket") {
 			if(age == "Adult") {Price = 30000;
 			} else if(age == "Infant") {Price = 0;
@@ -346,7 +220,7 @@ public class Everlanddd {
 			} else if(age == "Infant") {Price = 0;
 			} else {Price = 20000;}
 		} break;
-		case 4: b = "´ÙÀÚ³à ¿ì´ëÀû¿ë"; 
+		case 4: b = "ë‹¤ìë…€ ìš°ëŒ€ì ìš©"; 
 		if(ticketType == "A ticket") {
 			if(age == "Adult" || age == "Teenager") {Price = 48000;
 			} else if(age == "Infant") {Price = 0;
@@ -360,7 +234,7 @@ public class Everlanddd {
 			} else if(age == "Infant") {Price = 0;
 			} else {Price = 32000;}
 		} break;
-		case 5: b = "ÀÓ»êºÎ ¿ì´ëÀû¿ë"; 
+		case 5: b = "ì„ì‚°ë¶€ ìš°ëŒ€ì ìš©"; 
 		if(ticketType == "A ticket") {
 			if(age == "Infant") {Price = 0;
 			} else {Price = 51000;}
@@ -372,7 +246,7 @@ public class Everlanddd {
 			} else {Price = 42000;}
 		} break;
 	}
-		System.out.print("1. Ãß°¡±¸¸Å, 2. ±¸¸ÅÁ¾·á");
+		System.out.print("1. ì¶”ê°€êµ¬ë§¤, 2. êµ¬ë§¤ì¢…ë£Œ");
 		Scanner myInput5 = new Scanner(System.in);
 		addOrder = myInput5.nextInt();  
 		
@@ -387,8 +261,8 @@ public class Everlanddd {
     for(int i=0; i<arrPrice.size();i++) {
     	totalPrice += arrPrice.get(i) * arrCount.get(i);}
     
-    System.out.println("°¡°İÀº" + totalPrice +"¿øÀÔ´Ï´Ù. \n°¨»çÇÕ´Ï´Ù.");
-    System.out.println("=============== ¿¡¹ö·£µå =================");     
+    System.out.println("ê°€ê²©ì€" + totalPrice +"ì›ì…ë‹ˆë‹¤. \nê°ì‚¬í•©ë‹ˆë‹¤.");
+    System.out.println("=============== ì—ë²„ëœë“œ =================");     
 	
     for(int index = 0; index < orderCount; index++) {
     System.out.printf("%s  %s  X  %d  %d  %s\n", arrTicket.get(index), arrAge.get(index),
@@ -398,116 +272,3 @@ public class Everlanddd {
    		}
    }
 }
-=======
-				System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
-				continue;
-			}
-		}
-			if(Prior == 0) {
-				continue;
-		}
-		
-		switch(Prior) {
-		case 1: b = "ìš°ëŒ€ì ìš© ì—†ìŒ"; break;
-		case 2: b = "ì¥ì• ì¸ ìš°ëŒ€ì ìš©"; 
-		if(ticketType == "A ticket") {
-			if(age == "Adult") {
-				Price = 36000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 28000;}
-		} else if(ticketType == "B ticket") {
-			if(age == "Adult") {
-				Price = 33000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 26000;}
-		} else {
-			if(age == "Adult") {
-				Price = 30000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 24000;}
-		} break;
-		case 3: b = "êµ­ê°€ìœ ê³µì ìš°ëŒ€ì ìš©"; 
-		if(ticketType == "A ticket") {
-			if(age == "Adult") {
-				Price = 30000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 24000;}
-		} else if(ticketType == "B ticket") {
-			if(age == "Adult") {
-				Price = 28000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 22000;}
-		} else {
-			if(age == "Adult") {
-				Price = 25000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 20000;}
-		} break;
-		case 4: b = "ë‹¤ìë…€ ìš°ëŒ€ì ìš©"; 
-		if(ticketType == "A ticket") {
-			if(age == "Adult" || age == "Teenager") {
-				Price = 48000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 38000;}
-		} else if(ticketType == "B ticket") {
-			if(age == "Adult" || age == "Teenager") {
-				Price = 44000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 35000;}
-		} else {
-			if(age == "Adult" || age == "Teenager") {
-				Price = 40000;
-			} else if(age == "Infant") {
-				Price = 0;
-			} else {Price = 32000;}
-		} break;
-		case 5: b = "ì„ì‚°ë¶€ ìš°ëŒ€ì ìš©"; 
-		if(ticketType == "A ticket") {
-			if(age == "Infant") {
-				Price = 0;
-			} else {Price = 51000;}
-		} else if(ticketType == "B ticket") {
-			if(age == "Infant") {
-				Price = 0;
-			} else {Price = 47000;}
-		} else {
-			if(age == "Infant") {
-				Price = 0;
-			} else {Price = 42000;}
-		} break;
-		
-		}
-		System.out.print("1. ì¶”ê°€êµ¬ë§¤, 2. êµ¬ë§¤ì¢…ë£Œ");
-		Scanner myInput5 = new Scanner(System.in);
-		addOrder = myInput5.nextInt();
-		
-		saveTicket[orderCount] = ticketType;
-		saveAge[orderCount] = age;
-		saveCount[orderCount] = Count;
-		savePrice[orderCount] = Price;
-		saveb[orderCount] = b;
-		orderCount ++ ;
-      }while(addOrder == 1);
-      
-      System.out.println("ê°€ê²©ì€" + Price +"ì›ì…ë‹ˆë‹¤. \nê°ì‚¬í•©ë‹ˆë‹¤.");
-      System.out.println("=============== ì—ë²„ëœë“œ =================");
-     
-	for(int index = 0; index < orderCount; index++) {
-    System.out.printf("%s  %s  X  %d  %d  %s\n", saveTicket[index], saveAge[index],
-    		  						saveCount[index], savePrice[index], saveb[index]);
-	}
-    System.out.println("========================================");
-    break;
-      			}
-
-   		}
-}
->>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
