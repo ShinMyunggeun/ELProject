@@ -1,17 +1,25 @@
 package standard;
 
 import java.text.SimpleDateFormat;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Everland {
+=======
+import java.util.Date;
+import java.util.Scanner;
+
+public class Everlanddd {
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 
    public static void main(String[] args) {
       // TODO Auto-generated method stub
 
 	Scanner myInput = new Scanner(System.in) ;
 	int todayYear, todayDate, birthYear, birthMonth, birthDay, birthDate, resDate, Prior, Count = 0, Age, Price = 0;
+<<<<<<< HEAD
     int totalPrice=0;
 	int qty = 0; 
 	String ticketType, registNumber, age = null ;
@@ -23,14 +31,29 @@ public class Everland {
 	ArrayList<Integer> arrCount = new ArrayList<Integer>();
 	ArrayList<Integer> arrPrice = new ArrayList<Integer>();
 	ArrayList<String> arrB = new ArrayList<String>();
+=======
+	String ticketType, registNumber, age = null ;
+	String b = "";
+	int addOrder = 0, orderCount = 0 ;
+	String[] saveTicket = new String[100];
+	String[] saveAge = new String[100];
+	int[] saveCount = new int[100];
+	int[] savePrice = new int[100];
+	String[] saveb = new String[100];
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
       
 	String pattern1 = "YYYYMMDD";
 	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern1);
 	String today = simpleDateFormat.format(new Date());
+<<<<<<< HEAD
+=======
+	System.out.println(today);
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 	todayYear = Integer.parseInt(today.substring(0,4));
     todayDate = Integer.parseInt(today.substring(4,8));
 
     while(true) {
+<<<<<<< HEAD
     	arrTicket.clear();
     	arrAge.clear();
     	arrCount.clear();
@@ -40,10 +63,18 @@ public class Everland {
     while(true) {
     	  System.out.println("--------------------------------------");
     	  System.out.println("�̿볯¥�� �Է����ּ���.	 e.g) 20210601 ");
+=======
+   	  orderCount = 0;
+    do {
+    while(true) {
+    	  System.out.println("--------------------------------------");
+    	  System.out.println("이용날짜를 입력해주세요.	 e.g) 20210601 ");
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
     	  System.out.print(": ");
     	  Scanner myInput1 = new Scanner(System.in);
     	  resDate = myInput1.nextInt();
 
+<<<<<<< HEAD
     	 if(resDate == 20210904 || resDate == 20210905 || resDate == 20210911 || resDate == 20210912 || resDate == 20210918 || 
     	    resDate == 20210919 || resDate == 20210920 || resDate == 20210921 || resDate == 20210922 || resDate == 20210925 || 
     	    resDate == 20210926 || resDate == 20211002 || resDate == 20211003 || resDate == 20211009 || resDate == 20211010 ||
@@ -51,6 +82,15 @@ public class Everland {
     	    resDate == 20211031 || resDate == 20211106 || resDate == 20211107) {
     		ticketType = "Aticket";
     		break;
+=======
+   if(resDate == 20210904 || resDate == 20210905 || resDate == 20210911 || resDate == 20210912 || resDate == 20210918 || 
+	  resDate == 20210919 || resDate == 20210920 || resDate == 20210921 || resDate == 20210922 || resDate == 20210925 || 
+	  resDate == 20210926 || resDate == 20211002 || resDate == 20211003 || resDate == 20211009 || resDate == 20211010 ||
+	  resDate == 20211016 || resDate == 20211017 || resDate == 20211023 || resDate == 20211024 || resDate == 20211030 ||
+	  resDate == 20211031 || resDate == 20211106 || resDate == 20211107) {
+	  ticketType = "Aticket";
+	  break;
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
    }else if(resDate == 20210703 || resDate == 20210704 || resDate == 20210710 || resDate == 20210711 || resDate == 20210717 || 
 		    resDate == 20210718 || resDate == 20210724 || resDate == 20210725 || resDate == 20210729 || resDate == 20210730 || 
 		    resDate == 20210731 || resDate == 20210801 || resDate == 20210802 || resDate == 20210803 || resDate == 20210807 || 
@@ -84,6 +124,7 @@ public class Everland {
 	   		ticketType = "Cticket";
 	   		break;
     }else {
+<<<<<<< HEAD
    		   	System.out.println("�ٽ� �Է��� �ּ���.");
    		   	continue;}
     	  	}		   
@@ -99,13 +140,36 @@ public class Everland {
 
 		while(true) {
 			System.out.print("�ֹι�ȣ ���ڸ��� �Է��ϼ���.(e.g 910222)(0 ������ ó������)\n");
+=======
+   		   	System.out.println("다시 입력해 주세요.");
+   		   	continue;
+   	   			}
+    	  	}		   
+		   		   
+	if(ticketType == "A ticket") {
+		  Price = Price + 60000;
+		} else if(ticketType == "B ticket") {
+		  Price = Price + 56000;
+		} else {
+		  Price = Price + 50000;
+		}
+		System.out.println(ticketType);
+		System.out.println("ㅡ");
+
+		while(true) {
+			System.out.print("주민번호 앞자리를 입력하세요.(숫자로만 950916)(0 누르면 처음으로)\n");
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 			System.out.print(": ");
 			Scanner myInput2 = new Scanner(System.in);
 			registNumber = myInput2.nextLine();
 			if(registNumber.equals("0")) {
 				break;
 			} else if(registNumber.length() != 6) {
+<<<<<<< HEAD
 				System.out.println("�ٽ� �Է��� �ּ���.");
+=======
+				System.out.println("다시 입력해 주세요.");
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 				continue;
 			} else if(registNumber.length() == 6) {
 				birthMonth = Integer.parseInt(registNumber.substring(2,4));
@@ -113,6 +177,7 @@ public class Everland {
 				if((1 <= birthMonth && birthMonth <= 12) && (1 <= birthDay && birthDay <= 32)  ) {	
 					break;
 				} else {
+<<<<<<< HEAD
 					System.out.println("�ٽ� �Է��� �ּ���.");
 					continue;}					
 			} else {
@@ -121,6 +186,21 @@ public class Everland {
 			continue;}
 			else {
 		}birthYear = Integer.parseInt(registNumber.substring(0,2));
+=======
+					System.out.println("다시 입력해 주세요.");
+					continue;
+				}					
+			} else {
+				break;
+			}
+		}
+				if (registNumber.equals("0")) {
+					continue;			
+				} else {
+		}
+	
+		birthYear = Integer.parseInt(registNumber.substring(0,2));
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 		birthDate = Integer.parseInt(registNumber.substring(2,6));
 
 		if(0 <= birthYear && birthYear <= 30) {
@@ -132,16 +212,29 @@ public class Everland {
 		if(todayDate < birthDate) {
 			Age = Age - 1;
 		} else {
+<<<<<<< HEAD
 			Age = Age + 0;}
 
 		System.out.printf("�� %d\n", Age);
+=======
+			Age = Age + 0;
+		}
+
+		System.out.printf("만 %d\n", Age);
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 
 		if((19 <= Age) && (Age <= 64 ))  {
 			age = "Adult";	
 		} else if(65 <= Age) {
+<<<<<<< HEAD
 			age = "���";
 		} else if((3 <= Age) && (Age <= 12 )) {
 			age = "���";
+=======
+			age = "경로";
+		} else if((3 <= Age) && (Age <= 12 )) {
+			age = "어린이";
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 			if(ticketType == "A ticket") {
 				Price = 48000;
 			} else if(ticketType == "B ticket") {
@@ -151,6 +244,7 @@ public class Everland {
 			}
 		} else if(Age < 3) {
 			age = "Infant";
+<<<<<<< HEAD
 			Price = 0;} 
 		else {
 			age = "Teenager";
@@ -179,12 +273,44 @@ public class Everland {
 			System.out.println("3. ����������");
 			System.out.println("4. ���ڳ�");
 			System.out.println("5. �ӻ��");
+=======
+			Price = 0;
+		} else {
+			age = "Teenager";
+		}
+		System.out.println("ㅡ");
+
+		while(true) {
+			System.out.println("몇개를 주문하시겠습니까?(0 누르면 처음으로)");
+			System.out.print(": ");
+			Scanner myInput3 = new Scanner(System.in);
+			Count = myInput3.nextInt();
+			if(Count == 0) {
+				break;
+			} else {
+				break;
+			}
+		}
+		if(Count == 0) {
+			return;
+		}
+			System.out.println("ㅡ");
+
+		while(true) {
+			System.out.println("우대사항을 선택하세요.(0 누르면 처음으로)");
+			System.out.println("1. 없음 (나이 우대는 자동처리)");
+			System.out.println("2. 장애인");
+			System.out.println("3. 국가유공자");
+			System.out.println("4. 다자녀");
+			System.out.println("5. 임산부");
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
 			System.out.print(": ");
 			Scanner myInput4 = new Scanner(System.in);
 			Prior = myInput4.nextInt();
 			if(0 <= Prior && Prior <=5 ) {
 				break;
 			} else {
+<<<<<<< HEAD
 				System.out.println("�ٽ� �Է��� �ּ���.");
 			continue;}
 		}if(Prior == 0) {
@@ -272,3 +398,116 @@ public class Everland {
    		}
    }
 }
+=======
+				System.out.println("다시 입력해 주세요.");
+				continue;
+			}
+		}
+			if(Prior == 0) {
+				continue;
+		}
+		
+		switch(Prior) {
+		case 1: b = "우대적용 없음"; break;
+		case 2: b = "장애인 우대적용"; 
+		if(ticketType == "A ticket") {
+			if(age == "Adult") {
+				Price = 36000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 28000;}
+		} else if(ticketType == "B ticket") {
+			if(age == "Adult") {
+				Price = 33000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 26000;}
+		} else {
+			if(age == "Adult") {
+				Price = 30000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 24000;}
+		} break;
+		case 3: b = "국가유공자 우대적용"; 
+		if(ticketType == "A ticket") {
+			if(age == "Adult") {
+				Price = 30000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 24000;}
+		} else if(ticketType == "B ticket") {
+			if(age == "Adult") {
+				Price = 28000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 22000;}
+		} else {
+			if(age == "Adult") {
+				Price = 25000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 20000;}
+		} break;
+		case 4: b = "다자녀 우대적용"; 
+		if(ticketType == "A ticket") {
+			if(age == "Adult" || age == "Teenager") {
+				Price = 48000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 38000;}
+		} else if(ticketType == "B ticket") {
+			if(age == "Adult" || age == "Teenager") {
+				Price = 44000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 35000;}
+		} else {
+			if(age == "Adult" || age == "Teenager") {
+				Price = 40000;
+			} else if(age == "Infant") {
+				Price = 0;
+			} else {Price = 32000;}
+		} break;
+		case 5: b = "임산부 우대적용"; 
+		if(ticketType == "A ticket") {
+			if(age == "Infant") {
+				Price = 0;
+			} else {Price = 51000;}
+		} else if(ticketType == "B ticket") {
+			if(age == "Infant") {
+				Price = 0;
+			} else {Price = 47000;}
+		} else {
+			if(age == "Infant") {
+				Price = 0;
+			} else {Price = 42000;}
+		} break;
+		
+		}
+		System.out.print("1. 추가구매, 2. 구매종료");
+		Scanner myInput5 = new Scanner(System.in);
+		addOrder = myInput5.nextInt();
+		
+		saveTicket[orderCount] = ticketType;
+		saveAge[orderCount] = age;
+		saveCount[orderCount] = Count;
+		savePrice[orderCount] = Price;
+		saveb[orderCount] = b;
+		orderCount ++ ;
+      }while(addOrder == 1);
+      
+      System.out.println("가격은" + Price +"원입니다. \n감사합니다.");
+      System.out.println("=============== 에버랜드 =================");
+     
+	for(int index = 0; index < orderCount; index++) {
+    System.out.printf("%s  %s  X  %d  %d  %s\n", saveTicket[index], saveAge[index],
+    		  						saveCount[index], savePrice[index], saveb[index]);
+	}
+    System.out.println("========================================");
+    break;
+      			}
+
+   		}
+}
+>>>>>>> e95421018a241daa401d6712a7359f27e51f0a36
