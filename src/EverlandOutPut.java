@@ -30,6 +30,7 @@ public class Mine1 {
 }
 			System.out.println("========================================");
 }
+
 	public void Arrayadd(String ticketType, String age, int count, int price, String b) {
 		// TODO Auto-generated method stub
 		
