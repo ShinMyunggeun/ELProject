@@ -36,7 +36,7 @@ public class Mine {
 		    	    resDate == 20211016 || resDate == 20211017 || resDate == 20211023 || resDate == 20211024 || resDate == 20211030 ||
 		    	    resDate == 20211031 || resDate == 20211106 || resDate == 20211107) {
 		    		ticketType = "A ticket";
-		    		break;
+		    		
 		   }else if(resDate == 20210703 || resDate == 20210704 || resDate == 20210710 || resDate == 20210711 || resDate == 20210717 || 
 				    resDate == 20210718 || resDate == 20210724 || resDate == 20210725 || resDate == 20210729 || resDate == 20210730 || 
 				    resDate == 20210731 || resDate == 20210801 || resDate == 20210802 || resDate == 20210803 || resDate == 20210807 || 
@@ -54,7 +54,7 @@ public class Mine {
 				    resDate == 20211113 || resDate == 20211114 || resDate == 20211120 || resDate == 20211121 || resDate == 20211127 || 
 				    resDate == 20211128) {
 					ticketType = "B ticket";
-					break;
+					
 		   }else if(resDate == 20210628 || resDate == 20210629 || resDate == 20210630 || resDate == 20210701 || resDate == 20210702 || 
 				    resDate == 20210705 || resDate == 20210706 || resDate == 20210707 || resDate == 20210708 || resDate == 20210709 || 
 				    resDate == 20210712 || resDate == 20210713 || resDate == 20210714 || resDate == 20210715 || resDate == 20210716 || 
@@ -68,7 +68,7 @@ public class Mine {
 				    resDate == 20211122 || resDate == 20211123 || resDate == 20211124 || resDate == 20211125 || resDate == 20211126 || 
 				    resDate == 20211129 || resDate == 20211130) {  
 			   		ticketType = "C ticket";
-			   		break;
+			   		
 		    }
 		}
 		    public void ticketType() {
@@ -176,7 +176,6 @@ public class Mine {
 		        else {
 				System.out.println("다시 입력해 주세요.");
 				continue;}
-				}
 	       }
 
 				
@@ -215,7 +214,7 @@ public class Mine {
 				if(age == "Adult" || age == "Teenager") {Price = 48000;
 				} else if(age == "Infant") {Price = 0;
 				} else {Price = 38000;}
-			 else if(ticketType == "B ticket") {
+			}else if(ticketType == "B ticket") {
 				if(age == "Adult" || age == "Teenager") {Price = 44000;
 				} else if(age == "Infant") {Price = 0;
 				} else {Price = 35000;}
@@ -234,14 +233,11 @@ public class Mine {
 				} else {
 				if(age == "Infant") {Price = 0;
 				} else {Price = 42000;}
-			} break;
-			
+				} break;
 			}
-
+	    }
 			public void moreOver() {
 				System.out.print("1. 추가구매, 2. 구매종료");
 				Scanner myInput5 = new Scanner(System.in);
 				addOrder = myInput5.nextInt();  
 	}
-}
-}
